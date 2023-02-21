@@ -19,7 +19,7 @@ public class Publisher {
     @OneToMany(mappedBy = "publisher")
     private Set<Book> books;
 
-    private String name;
+    private String publisherName;
     private String address;
     private String city;
     private String state;
@@ -41,12 +41,12 @@ public class Publisher {
         this.books = books;
     }
 
-    public String getName() {
-        return name;
+    public String getPublisherName() {
+        return publisherName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setPublisherName(String name) {
+        this.publisherName = name;
     }
 
     public String getAddress() {
@@ -85,7 +85,7 @@ public class Publisher {
     public String toString() {
         return "Publisher{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", name='" + publisherName + '\'' +
                 ", address='" + address + '\'' +
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +
